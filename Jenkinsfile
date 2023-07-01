@@ -5,7 +5,7 @@ pipeline {
         timeout(time: 10, unit: 'MINUTES')
      }
     environment {
-    DOCKERHUB_CREDENTIALS = credentials('karo-dockerhub')
+    DOCKERHUB_CREDENTIALS = credentials('srini-dockerhub')
     APP_NAME = "ooghenekaro/argo-rollout-bluegreen"
     }
     stages { 
